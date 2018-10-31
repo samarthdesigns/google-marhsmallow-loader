@@ -1,0 +1,139 @@
+body {
+		margin: 0px;
+}
+
+.holder {
+		height: 100vh;
+		width: 100%;
+		background: #333;
+}
+
+.circs {
+		height: 100px;
+		width: 300px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.8);
+		-webkit-transform: translate(-50%, -50%) scale(0.8);
+		-moz-transform: translate(-50%, -50%) scale(0.8);
+		-o-transform: translate(-50%, -50%) scale(0.8);
+		z-index: 1;
+		opacity: 0;
+		animation: fader-google-circ .5s ease 4s forwards;
+}
+
+.circ {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 35px;
+		animation: up 2s ease 0s infinite;
+		background: #F44336;
+		position: relative;
+		top: 0px;
+}
+
+.circ1 {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 35px;
+		animation: up 2s ease .5s infinite;
+		background: #2196F3;
+		position: relative;
+		top: 0px;
+}
+
+.circ2 {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 35px;
+		animation: up 2s ease 1s infinite;
+		background: #4CAF50;
+		position: relative;
+		top: 0px;
+}
+
+.circ3 {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 35px;
+		animation: up 2s ease 1.5s infinite;
+		background: #FFEB3B;
+		position: relative;
+		top: 0px;
+}
+
+@keyframes up {
+		0% {
+				top: 0px;
+				position: relative;
+				top: 0px;
+		}
+		20% {
+				top: -15px;
+		}
+		40% {
+				top: 0px;
+		}
+		100% {
+				top: 0px;
+		}
+}
+
+.google-name {
+		height: 100px;
+		width: 400px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.8);
+		-webkit-transform: translate(-50%, -50%) scale(0.8);
+		-moz-transform: translate(-50%, -50%) scale(0.8);
+		-o-transform: translate(-50%, -50%) scale(0.8);
+		text-align: center;
+		color: #fff;
+		font-size: 30px;
+		line-height: 100px;
+		z-index: 2;
+		opacity: 0;
+		animation: fader-google 2s ease 1s forwards;
+		font-family: 'Roboto Condensed', sans-serif;
+		letter-spacing: 3px;
+}
+
+@keyframes fader-google {
+		0% {
+				opacity: 0;
+		}
+		25% {
+				opacity: 1;
+		}
+		75% {
+				opacity: 1;
+		}
+		100% {
+				opacity: 0;
+		}
+}
+
+@keyframes fader-google-circ {
+		to {
+				opacity: 1;
+		}
+}
